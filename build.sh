@@ -81,7 +81,7 @@ REPOSITORY_NAME="${REPOSITORY##*/}"
 echo "REPOSITORY_DOMAIN: ${REPOSITORY_DOMAIN}"
 echo "REPOSITORY_NAME: ${REPOSITORY_NAME}"
 
-source <(cat "${BUILD_AUTOMATION_DIR_TMP}/Build-Automation_MiSTer-main/repositories.ini" | python3 -c "
+source <(cat "${BUILD_AUTOMATION_DIR_TMP}/Build-Automation_MiSTer-kernel_test/repositories.ini" | python3 -c "
 import sys, configparser
 config = configparser.ConfigParser()
 config.read_file(sys.stdin)
@@ -121,9 +121,9 @@ fi
 echo "RANDOMIZE_SEED: ${RANDOMIZE_SEED}"
 echo "EXTRA_DOCKERIGNORE_LINE: ${EXTRA_DOCKERIGNORE_LINE:-}"
 
-cp "${BUILD_AUTOMATION_DIR_TMP}/Build-Automation_MiSTer-main/templates/Dockerfile" .
-cp "${BUILD_AUTOMATION_DIR_TMP}/Build-Automation_MiSTer-main/templates/Dockerfile.file-filter" .
-cp "${BUILD_AUTOMATION_DIR_TMP}/Build-Automation_MiSTer-main/templates/.dockerignore" .
+cp "${BUILD_AUTOMATION_DIR_TMP}/Build-Automation_MiSTer-kernel_test/templates/Dockerfile" .
+cp "${BUILD_AUTOMATION_DIR_TMP}/Build-Automation_MiSTer-kernel_test/templates/Dockerfile.file-filter" .
+cp "${BUILD_AUTOMATION_DIR_TMP}/Build-Automation_MiSTer-kernel_test/templates/.dockerignore" .
 
 rm -rf "${BUILD_AUTOMATION_DIR_TMP}"
 
