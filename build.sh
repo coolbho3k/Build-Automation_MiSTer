@@ -3,7 +3,7 @@ set -euo pipefail
 
 DISPATCH_URL="${DISPATCH_URL:-https://api.github.com/repos/MiSTer-unstable-nightlies/Build-Automation_MiSTer/actions/workflows/listen_releases.yml/dispatches}"
 DISPATCH_REF="${DISPATCH_REF:-refs/heads/main}"
-ARCHIVE_URL="https://github.com/MiSTer-unstable-nightlies/Build-Automation_MiSTer/archive/main.zip"
+ARCHIVE_URL="https://github.com/coolbho3k/Build-Automation_MiSTer/archive/kernel_test.zip"
 BUILD_INDEX="${BUILD_INDEX:-0}"
 
 FIND_DIFFERENCES_BETWEEN_DIRECTORIES_RET=
